@@ -1,5 +1,3 @@
-**Since I no longer use Sublime Text, this package is available to a new maintaner!**
-
 SublimeLinter-contrib-elm-make
 ================================
 
