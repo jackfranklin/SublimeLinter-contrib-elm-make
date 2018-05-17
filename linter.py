@@ -43,7 +43,7 @@ class ElmMakeLint(Linter):
     def run(self, cmd, code):
         """Run elm-make, transform json into a string parseable by the regex."""
 
-        root_dir = find_file_up('elm-package.json', os.path.abspath('.'))
+        root_dir = find_file_up('elm-package.json', os.path.abspath(self.view.file_name()))
         if root_dir:
             os.chdir(root_dir)
         else:
